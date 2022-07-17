@@ -38,8 +38,8 @@ export const Home = () => {
 
   const { handleSubmit, watch, reset } = newCycleForm
 
-  function handleCreateNewCycle() {
-    createNewCycle()
+  function handleCreateNewCycle(data: NewCycleFormData) {
+    createNewCycle(data)
     reset()
   }
 
